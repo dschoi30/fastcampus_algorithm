@@ -13,11 +13,11 @@ public class QuickSort {
         ArrayList<Integer> leftArr = new ArrayList<>();
         ArrayList<Integer> rightArr = new ArrayList<>();
 
-        for (int index = 1; index < dataList.size(); index++) {
-            if (dataList.get(index) > pivot) {
-                rightArr.add(dataList.get(index));
+        for (int i = 1; i < dataList.size(); i++) {
+            if (dataList.get(i) > pivot) {
+                rightArr.add(dataList.get(i));
             } else {
-                leftArr.add(dataList.get(index));
+                leftArr.add(dataList.get(i));
             }
         }
 
