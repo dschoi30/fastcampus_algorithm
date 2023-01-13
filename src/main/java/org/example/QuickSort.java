@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class QuickSort {
     public ArrayList<Integer> sort(ArrayList<Integer> dataList) {
@@ -23,7 +24,7 @@ public class QuickSort {
 
         ArrayList<Integer> mergedArr = new ArrayList<>();
         mergedArr.addAll(this.sort(leftArr));
-        mergedArr.addAll(Arrays.asList(pivot));
+        mergedArr.add(pivot);
         mergedArr.addAll(this.sort(rightArr));
 
         return mergedArr;
